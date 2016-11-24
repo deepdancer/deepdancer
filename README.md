@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/deepdancer/deepdancer.png)](http://travis-ci.org/deepdancer/deepdancer)
+
 Intentions
 ===
 
@@ -14,10 +16,7 @@ dependencies the way you want.
 
 http://xkcd.com/927/
 
-Recommended similar projects
-===
-
-https://github.com/nicocube/knit
+Similar project: https://github.com/nicocube/knit
 
 Pros
 ===
@@ -85,7 +84,7 @@ dependencies = new (require('deepdancer').Container)()
 
 // This is optional but in the nominal case you want to tell that you module is
 // composed of modules that are autoloading themselves in deepdancer.
-dependencies.setModuleAsAutoRegistered('myProject')
+dependencies.setModulesAsAutoregistered('myProject')
 
 dependencies.get('myProject/app').run()
 ```
@@ -119,7 +118,7 @@ third, `options` argument.
 * Autoregistered (if it belongs to an autoregistered root module) by exposing
 fields in the raw module (what you put in
 `module.exports`): `__type`, `__lifespan`, `__dependencies`, `__setupCalls` and
-`__arityCheck'.
+`__arityCheck`.
 
 ### type
 
@@ -209,7 +208,7 @@ a factory, an int.
 * options (optional): a dictionary of options that can be used
 
 
-setModuleAsAutoRegistered(rootModuleName)
+setModulesAsAutoregistered(rootModuleName)
 ---
 
 Arguments:
@@ -219,7 +218,7 @@ For example if you want to autoload thinks like
 `myProject/generic/controller` and `myProject/app/router` you can
 autoregister `'myProject'` even if no `myProject/index.js' exists.
 
-Mark a module and all submodules as autoregistered.
+Mark all submodules as autoregistered.
 
 has(key)
 ---

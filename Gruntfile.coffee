@@ -29,6 +29,7 @@ module.exports = (grunt) ->
 
       publish:
         command: 'cp package.json lib/deepdancer; ' +
+          'rm -rf lib/deepdancer/testUtilities; ' +
           'cp README.md lib/deepdancer; (cd lib/deepdancer; npm publish);'
 
 
