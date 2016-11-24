@@ -67,6 +67,5 @@ class DependencyResolver
     @container.get(dependency, dependencyLifespan, @providedDependencies)
 
 
-
 module.exports = (args...) ->
   (new DependencyResolver(args...)).resolve()

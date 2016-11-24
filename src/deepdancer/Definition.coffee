@@ -25,9 +25,7 @@ extractFieldsFromKeys =
 
 class Definition
 
-  constructor: (@key,
-              @value,
-              options = {}) ->
+  constructor: (@key, @value, options = {}) ->
     @_unwrapOptions(options)
     valueType = typeof @value
     if valueType in ['function', 'object']
@@ -98,4 +96,5 @@ class Definition
     throw new Error(@key + ': ' + message)
 
 
+    
 module.exports = Definition

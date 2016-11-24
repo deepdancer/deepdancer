@@ -119,4 +119,5 @@ class Container
     @_pendingResolutionModules[currentIndex..currentIndex] = []
 
 
+    
 module.exports = Container
