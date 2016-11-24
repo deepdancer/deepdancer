@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "grunt mochaTest"
+    "test": "grunt mochaTest && grunt coffeelint"
   },
   "repository": {
     "type": "git",
