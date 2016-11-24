@@ -1,0 +1,44 @@
+{
+  "name": "deepdancer",
+  "version": "1.0.0",
+  "description": "Dependency injection manager",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt mochaTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/deepdancer/deepdancer.git"
+  },
+  "keywords": [
+    "dependency",
+    "injection",
+    "manager",
+    "module",
+    "load"
+  ],
+  "author": "Fräntz Miccoli <frantz.miccoli+npm@gmail.com> (http://thedarkside.frantzmiccoli.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepdancer/deepdancer/issues"
+  },
+  "homepage": "https://github.com/deepdancer/deepdancer#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.11.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-coffeelint": "0.0.16",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "grunt-shell": "^2.1.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "lodash": "^4.17.2"
+  }
+}
